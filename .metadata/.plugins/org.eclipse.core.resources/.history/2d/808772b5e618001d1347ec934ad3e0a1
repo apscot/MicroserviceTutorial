@@ -1,0 +1,23 @@
+server:
+  port: 0
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/productsdb
+    username: root
+    password:
+    
+  application:
+      name: ProductsService
+  jpa:
+    hibernate:
+      ddl-auto: none
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - info,health

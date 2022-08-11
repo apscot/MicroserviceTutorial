@@ -1,0 +1,5 @@
+package com.example.product.microservice.entity;
+
+public class Products {
+
+}
